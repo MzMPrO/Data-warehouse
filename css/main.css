@@ -1,0 +1,534 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir/avenirnextcyr-bold.eot');
+	src: url('../fonts/Avenir/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Avenir/avenirnextcyr-bold.woff2') format('woff2'),
+		url('../fonts/Avenir/avenirnextcyr-bold.woff') format('woff'),
+		url('../fonts/Avenir/avenirnextcyr-bold.ttf') format('truetype'),
+		url('../fonts/Avenir/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg');
+	font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Bold.eot');
+    src: url('AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Bold.woff2') format('woff2'),
+        url('AvenirNext-Bold.woff') format('woff'),
+        url('AvenirNext-Bold.ttf') format('truetype'),
+        url('AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir/Avenir-Medium.eot');
+    src: url('../fonts/Avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Medium.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Medium.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir/Avenir-Roman.eot');
+    src: url('../fonts/Avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Roman.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Roman.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Roman.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Roman.svg#Avenir-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica/HelveticaMedium.eot');
+    src: url('../fonts/Helvetica/HelveticaMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica/HelveticaMedium.woff2') format('woff2'),
+        url('../fonts/Helvetica/HelveticaMedium.woff') format('woff'),
+        url('../fonts/Helvetica/HelveticaMedium.ttf') format('truetype'),
+        url('../fonts/Helvetica/HelveticaMedium.svg#HelveticaMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica/FreeSansBold.eot');
+    src: url('../fonts/Helvetica/FreeSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica/FreeSansBold.woff2') format('woff2'),
+        url('../fonts/Helvetica/FreeSansBold.woff') format('woff'),
+        url('../fonts/Helvetica/FreeSansBold.ttf') format('truetype'),
+        url('../fonts/Helvetica/FreeSansBold.svg#FreeSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Avenir', Helvetica, sans-serif;
+}
+.contener {
+    width: 1248px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-item {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+.header-logo {
+    width:"49px";
+    height:"35px";
+}
+.nav-list {
+    display: flex;
+    margin-left: 121px;
+    list-style-type: none;
+	padding-inline-start: 0px;
+}
+.nav-item {
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.nav-item:hover {
+    color:#212353
+}
+.nav-link {
+    margin-left: 418px;
+    width: 210px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    padding: 17px 29px 17px 29px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+.nav-link-img {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+/* INTRO */
+.intro {
+    display: flex;
+    height: 564px;
+    flex-wrap: nowrap;
+    margin-bottom: 99px;
+}
+
+.intro-h1 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+    color: #212353;
+    margin-right: -400px;
+    margin-top: 0;
+}
+.intro-img {
+    margin-top: 96px;
+}
+.intro-text {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin-bottom: 50px;
+}
+.intro-link {
+    color: #FFFFFF;
+    text-decoration: 0;
+    width: 170px;
+    height: 60px;
+    padding: 16px 37px 17px 37px;
+    background: #9C69E2;
+    border-radius: 50px;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+/* SERVICES */
+.service {
+    width: 1117px;
+    height: 560px;
+    background: #FDE8F4;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 150px;
+}
+.service-list {
+    margin: 125px 93px 125px 62px;
+}
+.service-h2 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.service-text {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin: 0;
+    width: 474px;
+    height: 170px;
+}
+/* FEATURES */
+.features-heading {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: #212353;
+}
+.features-heading-text {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #4B5D68;
+    width: 584px;
+    height: 58px;
+    margin-bottom: 100px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin-bottom: 150px;
+}
+.features-item {
+    width: 442px;
+    height: 358px;
+    display: flex;
+    align-items: center;
+    border-radius: 20% 15% 15% 15% / 99% 15% 15% 15% ;
+    padding: 49px 50px 33px 172px;
+    margin-left: 145px;
+}
+.first-features-item {
+    margin-bottom: 50px;
+    background: #F0FAF8;
+    margin-right: -50px;
+}
+.second-features-item {
+    margin-bottom: 50px;
+    background: #F5F0FC ;
+}
+.third-features-item {
+    background: #FDEFF8;
+}
+.fourth-features-item {
+    background: #EAF5FB;
+}
+.features-texts {
+    width: 220px;
+    height: 276px;
+}
+ .features-img {
+    width:"232px";
+    height:"211px";
+    position: absolute;
+    margin-left: -280px;
+}
+.features-box-h4 {
+    font-family: Helvetica;
+    font-size: 24px;
+    line-height: 130%;
+    color: #212353;
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+}
+.features-box-text {
+    font-family: 'Avenir';
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+    width: 220px;
+    height: 160px;
+}
+.features-box-link {
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+}
+.features-box-link-img {
+    margin-left: 20px;
+    margin-bottom: -4px;
+}
+/* TESTIMONIALS */
+.testimonials {
+    width: 1118px;
+    height: 709px;
+    background-color: #9C69E2;
+    border-radius: 50px;
+    padding-top: 109px;
+    margin-bottom: 150px;
+}
+.testimonials-heading {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-left: 93px;
+    margin-bottom: 88px;
+    margin-top: 0;
+}
+.testimonials-list {
+    width: 645px;
+    height: 330px;
+    padding: 60px 70px 50px 70px;
+    background-color: #FFFFFF;
+    margin-left: 93px;
+    display: flex;
+    box-shadow: 0px 20px 0px #8A56DB;
+    border-radius: 20px;
+}
+.testimonials-item {
+    margin-left: 30px;
+}
+.testimonials-name-person {
+    font-family: 'Avenir';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    margin-bottom: 0;
+}
+.john-fang {
+    width: 90px;
+    height: 90px;
+}
+.testimonials-site-person {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #9C69E2;
+    text-decoration: none;
+}
+.testimonials-text-person {
+    font-family: 'Avenir';
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+}
+.testimonials-slider-input {
+    width: 55px;
+    height: 10px;
+    margin-top: 60px;
+    margin-left: 93px;
+    justify-content: space-around;
+}
+.slider {
+    width: 5px;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.slider:checked {
+    width: 10px;
+    height: 10px;
+    background-color: #F063B8;
+    text-align: center;
+    padding: 0;
+    appearance: none;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    border: none;
+    margin-bottom: -2px;
+}
+/* FOOTER */
+.footer-hr {
+    background: #9C69E2;
+    opacity: 0.2;
+    height: 2px;
+    margin-bottom: 100px;
+}
+.footer-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.footer-heading-title {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+}
+.footer-heading-subtitle {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.footer-heading-link {
+    display: flex;
+    align-items: center;
+}
+.footer-heading-more-link {
+    color: #FFFFFF;
+    text-decoration: 0;
+    width: 170px;
+    height: 60px;
+    padding: 16px 37px 17px 37px;
+    background: #F063B8;
+    border-radius: 50px;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+.footer-heading-demo-link {
+    margin-left: 30px;
+    width: 210px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    padding: 17px 29px 17px 29px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+.footer-heading-demo-link-img {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.footer {
+    display: flex;
+}
+.footer-logo {
+    display: flex;
+    margin-bottom: 65px;
+    align-items: center;
+}
+.footer-h6 {
+    font-family: 'Avenir';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 160%;
+    color: #212353;
+    margin-left: 20px;
+    align-items: center;
+}
+.footer-adress {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin-bottom: 10px;
+    width: 335px;
+    height: 65px;
+}
+.footer-contact {
+    font-family: 'Avenir';
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin-bottom: 118px;
+    width: 335px;
+    height: 60px;
+}
+.footer-last-text {
+    font-family: 'Avenir';
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    width: 360px;
+    height: 50px;
+}
+.footer-nav {
+    display: flex;
+    list-style-type: none;
+}
+.footer-nav-list {
+    display: flex;
+}
+.footer-nav-heading {
+    margin-right: 70px;
+    font-family: 'Avenir';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+}
+.footer-nav-about {
+    width: 166px;
+    height: 220px;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.footer-nav-help {
+    width: 166px;
+    height: 250px;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.footer-nav-sm {
+    width: 178px;
+    height: 110px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+}
+.footer-link {
+    font-family: 'Avenir';
+    font-size: 16px;
+    line-height: 250%;
+    color: #212353;
+    text-decoration: none;
+}
